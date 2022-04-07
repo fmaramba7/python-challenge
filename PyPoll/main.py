@@ -29,6 +29,8 @@ with open("pypoll.txt", "w") as txt_file:
 
     print("election results")
     txt_file.write("election results" + '\n')
+    txt_file.write("Total votes" + '\n')
+    txt_file.write("Winner" + '\n')
 
     print("-------------------------")
     print ("Total votes: " + str(total_votes))
