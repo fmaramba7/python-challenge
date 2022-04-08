@@ -38,7 +38,7 @@ with open("pypoll.txt", "w") as txt_file:
 #print (candidates_list)
     for key, value in candidates_list.items():
         percent = value *100/total_votes
-        output = key + ": %" + str(percent) + "(" + str(value) + ")"
+        output = key + ": " + str(round(percent, 3)) + "% (" + str(value) + ")"
         print(output)
         if value > winners_count :
             winners_name = key
